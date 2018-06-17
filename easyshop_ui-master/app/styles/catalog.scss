@@ -1,0 +1,97 @@
+#rightCol {
+    float: right;
+    width: 244px;
+    margin-left: 20px;
+}
+#leftCol {
+    width: 110%;
+    float: left;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#centerCol {
+    margin-left: 156%;
+    width: 500px;
+}
+.multipleColumn{
+    display: inline-block;
+}
+.normal-btn {
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 150px;
+    padding: 10px;
+    margin: 0px auto;
+}
+.inline{
+    display: inline-block;
+}
+.margin{
+    margin: 10px 10px 10px 10px;
+    width: 60%;
+}
+.total{
+    margin: 10px 10px 10px 10px;
+    width: 30%;
+}
+.alignRight{
+    text-align: right;
+}
+.addressesDiv{
+    display: inline-block;
+    border-style: ridge;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid #00bcd4;
+    display: table;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 15px;
+    padding: 20px;
+    width: 60%;
+}
+.statusP{
+    color: gray;
+    display: inline;
+    margin-left:10%;
+}
+.messages-container{
+    height: 100%;
+    font-family: sanfrancisco;
+    margin-bottom: 50px;
+    width: 70%;
+    margin: 15px auto;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    .message{
+        border-bottom: 1px solid lightgray;
+        padding: 5px 10px;
+        .msg-content{
+            margin: 0px;
+            display: inline-block;
+        }
+        .msg-icon{
+            padding: 0px 10px;
+            color: #00bcd4;
+        }
+        .date-container{
+            color: gray;
+            font-size: 0.9rem;
+            text-align: right;
+            margin-right: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+    .msg-read{
+        background-color: #F5F5F5;
+    }
+    .read-tick{
+        padding: 0px 7px;
+        color: green;
+    }
+}

@@ -1,0 +1,137 @@
+.profilePaper {
+  display: inline-block;
+  margin: 16px 32px 16px 0
+}
+.profileSideMenu {
+  padding: 16px 0px;
+  display: table-cell;
+  width: 256px;
+}
+.saveButton {
+	text-align: right;
+}
+.appBar {
+	height: 60px;
+	background-color: rgba(0,188,212,1);
+}
+.active-tab{
+  border-bottom: 3px solid #00bcd4;
+}
+.tab-container{
+  display: table;
+  width: 100%;
+  .tabSpan{
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+  }
+}
+.tab-data{
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  .field-container{
+    display: table;
+    width: 55%;
+    padding: 20px 0px;
+    margin: 0px auto;
+    .field-label{
+      display: table-cell;
+      width: 27%;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+    .field-input{
+      display: table-cell;
+      width: 75%;
+    }
+    .field{
+      display: table-cell;
+      width: 60%;
+      padding: 10px;
+    }
+  }
+  .field-btn{
+    width: 10%;
+    text-align: center;
+    background-color: #00bcd4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 70px auto;
+    color: white;
+    font-weight: bold;
+  }
+}
+.borderedDiv{
+    display: inline-block;
+    border-style: ridge;
+    margin-right: 40px;
+}
+.borderedDivNoInline{
+    border: 1px solid black;
+    margin-right: 40px;
+}
+.appBarButton{
+  text-align: right;
+  display: inline-block;
+  margin: 10px 10px 10px 80%;
+}
+.cartButton{
+  text-align: right;
+  display: inline-block;
+  margin: 10px 10px 10px 2%;
+}
+.logout-button{
+  text-align: right;
+  display: inline-block;
+  margin: 10px 10px 10px 2%;
+}
+
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+.orderButton{
+  width: 20%;
+  text-align: center;
+  background-color: #00bcd4;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px auto;
+  color: white;
+  font-weight: bold;
+  color: black; 
+  padding: 10px;
+  margin: 0px 0px 0px 80%;
+}
+.address-container{
+    width: 47%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9rem;
+    //border: 1px solid lightgray;
+    margin-left: 2%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    .field-container{
+      display: table;
+      width: 100%;
+      padding: 10px;
+      margin: 0px auto;
+    }
+    .update-btn{
+      margin: 15px auto;
+      width: 25%;
+    }
+    .addr-del{
+      color: gray;
+      font-size: 1.57rem;
+      float: right;
+      padding: 7px 15px;
+    }
+}

@@ -1,0 +1,31 @@
+@import './login.scss';
+@import './profile.scss';
+@import './catalog.scss';
+@import './app_bar.scss';
+@import './cart.scss';
+@import './order.scss';
+@import './subscription.scss';
+@import './test.scss';
+
+@font-face
+{
+  font-family: sanfrancisco;
+  src: url('./../fonts/sanfranciscotext-regular-webfont.ttf') format('truetype'),
+       url('./../fonts/sanfranciscotext-regular-webfont.woff') format('woff'),
+       url('./../fonts/sanfranciscotext-regular-webfont.eot'),
+       url('./../fonts/sanfranciscotext-regular-webfont.svg'),
+       url('./../fonts/sanfranciscotext-regular-webfont.woff2')
+}
+body{
+	font-family: sanfrancisco;
+	margin: 0px;
+}
+.home-page{
+	text-align: center;
+	background-image: url('../images/home.jpg');
+	background-size: cover;
+  background-repeat: round;
+}
+.hidden{
+  display: none !important;
+}

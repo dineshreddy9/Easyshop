@@ -1,0 +1,125 @@
+db.createCollection("customer");
+db.customer.insert({
+    custId:1,
+    custFirstName: "admin",
+    custLastName: "",
+    custEmailid: "admin@gmail.com",
+    custPhoneNumber: "123455667",
+    custPassword: "21232f297a57a5a743894a0e4a801fc3",
+    activeStatus: true
+});
+
+db.createCollection("address");
+db.address.insert({
+    addressId:1,
+    custId: 2,
+    address1: "Address1",
+    address2: "Address2",
+    city: "HYD",
+    phoneNumber: "1234556",
+    country: "INDIA",
+    zipcode: 1235
+});
+
+db.createCollection("sequence");
+db.sequence.insert({
+    tableName: "customer",
+    columnName: "custId",
+    seqVal: 2
+});
+db.sequence.insert({
+    tableName: "address",
+    columnName: "addressId",
+    seqVal: 2
+});
+db.sequence.insert({
+    tableName: "catalog",
+    columnName: "itemId",
+    seqVal: 2
+});
+db.sequence.insert({
+    tableName: "cart",
+    columnName: "cartItemId",
+    seqVal: 2
+});
+
+db.sequence.insert({
+    tableName: "card",
+    columnName: "cardId",
+    seqVal: 1
+});
+
+db.sequence.insert({
+    tableName: "address",
+    columnName: "addressId",
+    seqVal: 1
+});
+
+
+db.sequence.insert({
+    tableName: "order_hdr",
+    columnName: "orderId",
+    seqVal: 2
+});
+
+db.sequence.insert({
+    tableName: "subs_order_hdr",
+    columnName: "subsOrderId",
+    seqVal: 2
+});
+db.createCollection("item")
+db.item.insert({
+    itemId: 1,
+    itemName: "Cricket ball",
+    itemDescription: "This is a cricket ball",
+    itemPrice: 10,
+    itemQuantity: 100,
+    itemImage: "http://www.lexonindustries.com/admin/pimgs/LI-1281_302_1.jpg",
+    seqVal: 2
+});
+
+db.item.insert({
+    itemId: 2,
+    itemName: "Cricket bat",
+    itemDescription: "This is a cricket bat",
+    itemPrice: 20,
+    itemQuantity: 100,
+    itemImage: "http://www.cricketdirect.co.uk/imagecache/cd468506-3242-4b55-9365-a2de009b1e27_500x500.jpg",
+    seqVal: 2
+});
+
+db.createCollection("tax_info")
+db.tax_info.insert({
+    taxId: 1,
+    zipcode: 1235,
+    taxPercentage: 10
+});
+
+db.tax_info.insert({
+    taxId: 2,
+    zipcode: 1234,
+    taxPercentage: 10
+});
+
+db.createCollection("message")
+db.message.insert({
+    messageId: 1,
+    custId: 2,
+    messageContent: "java.lang.Exception: Stock is not there for Cricket ball.  Order will be created when the stock is available.",
+    isRead: false,
+    messageTime: '2017-04-21'
+});
+
+
+db.createCollection("card")
+db.card.insert({
+    cardId: 1,
+    custId: 2,
+    cardNumber: 123245666,
+    cardCvv: 123,
+    cardExpMon: 12,
+    cardExpYr: 21
+});
+
+
+#db.sequence.update({'columnName':'addressId', 'tableName':'address'},{$set:{'seqVal':1}})
